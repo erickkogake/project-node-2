@@ -1,0 +1,32 @@
+{
+  "name": "projeto2-ignite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch ./src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js",
+    "build": "tsup src -d build",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/supertest": "^2.0.12",
+    "supertest": "^6.3.3",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.1"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^8.3.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.17.0",
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.6",
+    "zod": "^3.21.4"
+  }
+}
